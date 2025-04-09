@@ -1,0 +1,313 @@
+/*index,html koden*/
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(241, 212, 183);
+
+    }
+  
+   
+   
+
+
+h1{
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+     color: rgb(7, 113, 7);
+     
+}
+
+p{
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(249, 14, 18);
+    
+}
+
+
+header {
+    background-color: #056b22; /* Bakgrundsfärg för header */
+    padding: 38px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #830a0a;
+    padding: 10px;
+}
+
+.menu-btn {
+    background-color: black;
+    color: rgb(243, 235, 235);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* Döljer knappen som standard */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Visar menyn som flexbox för desktop */
+}
+
+.menu li {
+    margin: 10px; /* Lägger till lite mellanrum mellan menyalternativen */
+}
+
+.menu a {
+    color: rgb(19, 19, 210);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: rgb(180, 255, 30);
+}
+
+/* Media query för mobila enheter */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* döljer menyn på mindre skärmar */
+        flex-direction: column; /* gör menyn vertikal */
+        position: absolute; /* gör så att den kan överlappa innehållet */
+        background-color: #fbf7f7; /* bakgrundsfärg */
+        top: 70px; /* placera under knappen */
+        right: 0; /* Högerjusterad */
+        width: 100%; /* Full bredd */
+    }
+
+    .menu.active {
+        display: flex; /* Visa menyn när den är aktiv på mobil */
+       
+    }
+    .menu a.active{
+        color: rgb(255, 0, 212);
+        font-weight: bold;
+    }
+
+    .menu-btn {
+        display: block; /* Visar menykontrollen på mobila enheter */
+    }
+}
+
+.gallery{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gallery-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.gallery-img{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover{
+    transform: scale(1.05);
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 189, 237, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox-content{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+.lightbox-img{
+    width: 100%;
+    height: auto;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:white;
+    font-weight:bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+/* index.html kod slut*/
+
+/* about us */
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.first{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 20px;
+      }
+
+
+.second{
+    font-family: "Abril Fatface", serif;
+    font-size: 20px;
+    font-style: 10px;
+    text-align: left;
+    margin: 75px;
+    overflow: hidden;
+    color: #3dae5d;
+  }
+
+  .image1{
+    float: right;
+    margin-right: 25px;
+    width: 30%;
+    border-radius: 35%;
+    border: 3px solid rgb(255, 17, 0);
+    
+  }
+
+/* about us slut */
+
+/* Donations */
+
+  .dark-theme {
+    background-color: #1f1f1f;
+    color: rgb(99, 92, 119);
+  }
+  
+  .dark-theme nav ul li a {
+    color: rgb(21, 156, 235);
+  }
+
+  .third{
+text-align: center;
+color: rgb(9, 180, 92);
+margin: 50px;
+font-size: 20px;
+
+  }
+
+  .fourth{
+    text-align:center ;
+    color: #080808;
+    font-size: 20px;
+  }
+
+  #first-button{
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    margin: 10px;
+    margin-top: 35px;
+  }
+
+form{
+    max-width: 400px;
+    margin: 20px auto;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px; 
+}
+
+input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #e81d1d;
+    border-radius: 4px;
+    margin-left: 15px;
+
+
+}
+button[type="submit"]{
+    padding: 10px 15px;
+    background-color: #0775e2;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 140px;
+   
+
+
+}
+
+button:hover{
+    background-color: rgb(7, 227, 58);
+    transition: background-color 0.3s ease;
+    
+}
+/*Donations slut*/
+
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu.active{
+    display: flex;
+}
+
+.fifth{
+    font-size: 20px;
+    color: #080808;
+}
